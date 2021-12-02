@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Red+Hat+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* font */
-
 html{
     background: #C1C1C1;
 }
-
 .col-5{
     margin-bottom: 0 !important;
 }
-.down_img{
-    /* position: absolute;
-    bottom: -4px; */
-}
+/* font */
 h1,
 h2,
 h3,
@@ -27,8 +21,6 @@ menu,
 p, li{
     font-family: 'Red Hat Display', sans-serif;
     color: #000;
-    /* line-height: 1.5; */
-    /* font-weight: 700; */
 }
 h2{
     font-size: 57px;
@@ -45,8 +37,6 @@ hr{
     margin: 0;
 }
 /* colot text */
-
-
 .color_red{
     color: #EC3C3C;
 }
@@ -56,21 +46,15 @@ hr{
 .font_size64{
     font-size: 42px;
 } 
-/* .color_brown{
-    color: #6B3A0D;
-} */
+
 .img{
-    /* display: flex;
-    justify-content: center; */
     padding-left: 40px;
 }
 .wrapper{
     max-width: 1500px;
     margin: 0 auto;
 }
-header{
 
-}
 menu{
     padding: 33px 50px;
     font-size: 50px;
@@ -83,7 +67,6 @@ menu div{
 .sub_menu{
     position: fixed;
     top: 150px;
-    /* margin-left: 1750px; */
     padding: 0;
     z-index: 800;
 }
@@ -123,7 +106,6 @@ main{
     top: 0;
     height: 2px;
     z-index: 700;
-    /* border: 2px solid red; */
 }
 #clock img, #clock svg{
     position: absolute;
@@ -220,17 +202,63 @@ footer{
 
 @media screen and (max-width: 1200px) {
     menu {
-        font-size: 22px;
+        font-size: 22px; /* зміна розміру шрифта */
     }
 }
 
-@media screen and (max-width: 720px) {
+/* дані властивості почнуть діяти, коли ширина екрану буде менша за 720px */
+@media screen and (max-width: 720px) { 
     .flex{
-        flex-direction: column;
+        flex-direction: column; /* вертикальне розиіщення блоків */ 
     }
     #clock,
     .hide
     {
-        display: none;
+        display: none; /* приховування елементів сайту */
     }
+}
+
+.bg_1_1{
+    background-image: url('../img/bg/1_1.png');
+}
+.bg_1_2{
+    background-image: url('../img/bg/1_2.png');
+}
+.bg_2_1{
+    background-image: url('../img/bg/2_1.png');
+}
+.bg_2_2{
+    background-image: url('../img/bg/2_2.png');
+}
+.bg_3_1{
+    background-image: url('../img/bg/3_1.png');
+}
+.bg_3_2{
+    background-image: url('../img/bg/3_2.png');
+}
+.bg_4_1{
+    background-image: url('../img/bg/4_1.png');
+}
+.bg_4_2{
+    background-image: url('../img/bg/4_2.png');
+}
+.bg_5_1{
+    background-image: url('../img/bg/5_1.png');
+}
+.bg_5_2{
+    background-image: url('../img/bg/5_2.png');
+}
+.bg_1_1,
+.bg_1_2,
+.bg_2_1,
+.bg_2_2,
+.bg_3_1,
+.bg_3_2,
+.bg_4_1,
+.bg_4_2,
+.bg_5_1,
+.bg_5_2
+{
+    background-size: 100% auto;
+    
 }
